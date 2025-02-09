@@ -52,6 +52,23 @@ class Molecule:
         self.speed = 0.5 * temperature
         self.radius = 3
 
+    def check_collision(self, other):
+        dx = self.x - other.x
+        dy = self.y - other.y
+        distance_sq = dx*dx + dy*dy
+        min_distance = self.radius + other.radius
+        if distance_sq < min_distance*min_distance:
+            # Simple elastic collision response (can be improved for accuracy)
+            self.vx, other.vx = other.vx, self.vx
+            self.vy, other.vy = other.vy, self.vy
+            # Separate molecules slightly to avoid sticking
+            overlap = min_distance - math.sqrt(distance_sq)
+            self.x += overlap * (self.x - other.x) / math.sqrt(distance_sq) if distance_sq != 0 else overlap / 2
+            self.y += overlap * (self.y - other.y) / math.sqrt(distance_sq) if distance_sq != 0 else overlap / 2
+            other.x -= overlap * (self.x - other.x) / math.sqrt(distance_sq) if distance_sq != 0 else overlap / 2
+            other.y -= overlap * (self.y - other.y) / math.sqrt(distance_sq) if distance_sq != 0 else overlap / 2
+
+
     def update(self, dt, temperature, container_rect):
         self.speed = 0.5 * temperature
         self.x += self.vx * self.speed * dt
@@ -191,6 +208,9 @@ def main():
 
         # Update molecules
         container_rect = (container_left, container_top, piston_slider.value, container_bottom)
+        for i in range(num_molecules):
+            for j in range(i + 1, num_molecules):
+                molecules[i].check_collision(molecules[j])
         for molecule in molecules:
             molecule.update(dt_sec, temp_slider.value, container_rect)
 
