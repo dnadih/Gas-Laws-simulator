@@ -30,7 +30,7 @@ This simulator demonstrates key gas laws and thermodynamic principles by visuali
 When you move the piston, the simulator models an adiabatic-like process. In an adiabatic process (no heat exchange with the surroundings), the relation between temperature and volume is given by:
 
 \[
-T \, V^{\gamma - 1} = \text{constant}
+$T \, V^{\gamma - 1} = \text{constant}$
 \]
 
 In this simulation:
