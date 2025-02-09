@@ -109,7 +109,7 @@ class Molecule:
 # -------------------------------
 def main():
     pygame.init()
-    screen_width, screen_height = 800, 600
+    screen_width, screen_height = 900, 700
     screen = pygame.display.set_mode((screen_width, screen_height))
     pygame.display.set_caption("Gas Laws Simulation: Coupled Volume/Temp")
     clock = pygame.time.Clock()
@@ -119,14 +119,14 @@ def main():
     # Define container boundaries.
     container_left = 50
     container_top = 50
-    container_bottom = 450
+    container_bottom = 530
     container_height = container_bottom - container_top
 
     # Create two sliders:
     # 1. Piston slider: controls volume (by moving the piston).
-    piston_slider = Slider(x=50, y=500, width=300, height=20, min_val=150, max_val=750, initial_val=500)
+    piston_slider = Slider(x=50, y=600, width=300, height=20, min_val=150, max_val=750, initial_val=500)
     # 2. Temperature slider: simulates adding or removing energy (without changing volume).
-    temp_slider = Slider(x=400, y=500, width=300, height=20, min_val=10, max_val=300, initial_val=30)
+    temp_slider = Slider(x=400, y=600, width=400, height=20, min_val=10, max_val=400, initial_val=30)
 
     # Set the coupling parameters.
     # Here we use an adiabatic-like relation: T * L^(gamma-1) = K,
