@@ -1,7 +1,3 @@
-Below is a sample Markdown description of the simulator app. You can use this in your project’s README or documentation on GitHub.
-
----
-
 # Gas Laws Simulator
 
 This simulator demonstrates key gas laws and thermodynamic principles by visualizing gas behavior in a 2D container with a movable piston. The simulation uses simplified physics to illustrate how changes in volume and temperature affect the gas pressure and the speed of its molecules.
@@ -36,11 +32,11 @@ $T \, V^{\gamma - 1} = \text{constant}$
 In this simulation:
 - The effective length \( L \) is defined as:
   \[
-  L = \texttt{piston\_slider.value} - \texttt{container\_left}
+  $L = \texttt{piston\_slider.value} - \texttt{container\_left}$
   \]
 - The energy state of the gas is characterized by the constant:
   \[
-  K = T \, L^{\gamma-1}
+  $K = T \, L^{\gamma-1}$
   \]
   where:
   - \( T \) is the temperature,
@@ -49,7 +45,7 @@ In this simulation:
 Thus, when the **piston slider** is moved (changing \( L \)), the temperature is recalculated as:
 
 \[
-T = \frac{K}{L^{\gamma-1}}
+$T = \frac{K}{L^{\gamma-1}}$
 \]
 
 ### Energy Addition Without Volume Change
@@ -58,7 +54,7 @@ When you move the **temperature slider**, you are directly adding or removing en
 - The temperature \( T \) is set directly by the slider.
 - The energy constant \( K \) is updated accordingly:
   \[
-  K = T \, L^{\gamma-1}
+  $K = T \, L^{\gamma-1}$
   \]
 - The volume remains unchanged.
 
@@ -67,7 +63,7 @@ When you move the **temperature slider**, you are directly adding or removing en
 The pressure in the simulator is computed using a simplified version of the ideal gas law:
 
 \[
-P \sim \frac{n\,T}{V}
+$P \sim \frac{n\,T}{V}$
 \]
 
 where:
