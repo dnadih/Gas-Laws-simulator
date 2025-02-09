@@ -32,7 +32,7 @@ $T \, V^{\gamma - 1} = \text{constant}$
 In this simulation:
  - The effective length L is defined as:
   \[
-$L = {piston\slider.value} - {container\_left}$
+$L = {piston_slider.value} - {container_left}$
   \]
  The energy state of the gas is characterized by the constant:
   \[
