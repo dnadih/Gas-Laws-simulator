@@ -30,7 +30,7 @@ $T \, V^{\gamma - 1} = \text{constant}$
 \]
 
 In this simulation:
- The effective length \( L \) is defined as:
+ - The effective length L is defined as:
   \[
   $L = \texttt{piston\_slider.value} - \texttt{container\_left}$
   \]
