@@ -34,7 +34,7 @@ In this simulation:
   \[
 $L = {piston_slider.value} - {container_left}$
   \]
- The energy state of the gas is characterized by the constant:
+ - The energy state of the gas is characterized by the constant:
   \[
   $K = T \, L^{\gamma-1}$
   \]
