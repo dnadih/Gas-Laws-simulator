@@ -91,6 +91,7 @@ A scaling factor is applied to ensure the numerical values are visually signific
    - **Drag the Piston Slider:** Observe that reducing the volume increases the gas temperature (simulating adiabatic compression) and vice versa.
    - **Drag the Temperature Slider:** Directly add or remove energy from the gas. The volume remains fixed while the pressure and the motion of the gas molecules change.
 
-Enjoy exploring the behavior of gases through this interactive simulation! \n
-  gas_simulator.py is a little more graphically enhanced version
+Enjoy exploring the behavior of gases through this interactive simulation!
+- gas_simulator.py is a little more graphically enhanced version
+  
 ---
