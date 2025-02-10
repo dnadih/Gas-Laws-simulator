@@ -36,7 +36,7 @@ $L = {pistonslider.value} - {containerleft}$
   \]
  - The energy state of the gas is characterized by the constant:
   \[
-  $K = T \, L^{\gamma-1}$
+  $K = T \frac L^{\gamma-1}$
   \]
   where:
   - \( T \) is the temperature,
