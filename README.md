@@ -2,7 +2,7 @@
 
 This simulator demonstrates key gas laws and thermodynamic principles by visualizing gas behavior in a 2D container with a movable piston. The simulation uses simplified physics to illustrate how changes in volume and temperature affect the gas pressure and the speed of its molecules.
 
-[screanshot]([https://github.com/dnadih/Gas-Laws-simulator/blob/main/Screenshot.jpg])
+[screenshot](https://github.com/dnadih/Gas-Laws-simulator/blob/main/Screenshot.jpg)
 
 ## Features
 
